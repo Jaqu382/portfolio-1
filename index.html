@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <!--Contains data metadata that will not change-->
+    <title>Risk of Rain 2 builds log</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script src="js/script.js"></script>
+  </head>
+  <div>
+    <header>Record your Risk of Rain 2 builds</header>
+    <form action="process.php" method="post">
+      <fieldset>
+        <legend>Character:</legend>
+        <label for="commando"
+          >Commando
+          <input
+            id="commando"
+            type="radio"
+            name="player"
+            value="Commando"
+            required
+        /></label>
+        <label for="huntress"
+          >Huntress
+          <input id="huntress" type="radio" name="player" value="Huntress"
+        /></label>
+        <label for="bandit"
+          >Bandit <input id="bandit" type="radio" name="player" value="Bandit"
+        /></label>
+        <label for="MUL-T"
+          >MUL-T <input id="mult-t" type="radio" name="player" value="MUL-T"
+        /></label>
+        <label for="engineer"
+          >Engineer
+          <input id="engineer" type="radio" name="player" value="Engineer"
+        /></label>
+        <label for="artificer"
+          >Artificer
+          <input id="artificer" type="radio" name="player" value="Artificer"
+        /></label>
+        <label for="mercenary"
+          >Mercenary
+          <input id="mercenary" type="radio" name="player" value="Mercenary"
+        /></label>
+        <label for="rex"
+          >Rex <input id="rex" type="radio" name="player" value="Rex"
+        /></label>
+        <label for="loader"
+          >Loader <input id="loader" type="radio" name="player" value="Loader"
+        /></label>
+        <label for="acrid"
+          >Acrid <input id="acrid" type="radio" name="player" value="Acrid"
+        /></label>
+        <label for="captain"
+          >Captain
+          <input id="captain" type="radio" name="player" value="Captain"
+        /></label>
+        <label for="railgunner"
+          >Railgunner
+          <input id="railgunner" type="radio" name="player" value="Railgunner"
+        /></label>
+        <label for="voidFiend"
+          >Void Fiend
+          <input id="voidFiend" type="radio" name="player" value="Void Fiend"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Items:</legend>
+        <i>Not all 174 items included in this demo</i>
+        <h3>Common Items</h3>
+        <div>
+          <lable for="armorRounds">Armor-Piercing Rounds</lable>
+          <input
+            class="item"
+            id="armorRounds"
+            type="checkbox"
+            name="Armor-Piercing Rounds"
+            value="Armor-Piercing Rounds"
+          />
+          <lable for="armorRoundsQuantity"></lable>
+          <input
+            id="armorRoundsQuantity"
+            type="number"
+            name="Armor-Piercing Rounds Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="backupMag">Backup Magazine</lable>
+          <input
+            class="item"
+            id="backupMag"
+            type="checkbox"
+            name="Backup Magazine"
+            value="Backup Magazine"
+          />
+          <lable for="backupMagQuantity"></lable>
+          <input
+            id="backupMagQuantity"
+            type="number"
+            name="Backup Magazine Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="bustlingFungus">Bustling Fungus</lable>
+          <input
+            class="item"
+            id="bustlingFungus"
+            type="checkbox"
+            name="Bustling Fungus"
+            value="Bustling Fungus"
+          />
+          <lable for="bustlingFungusQuantity"></lable>
+          <input
+            id="bustlingFungusQuantity"
+            type="number"
+            name="Bustling Fungus Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="tougherTimes">Tougher Times</lable>
+          <input
+            class="item"
+            id="tougherTimes"
+            type="checkbox"
+            name="Tougher Times"
+            value="Tougher Times"
+          />
+          <lable for="tougherTimesQuantity"></lable>
+          <input
+            id="tougherTimesQuantity"
+            type="number"
+            name="Tougher Times Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="crowbar">Crowbar</lable>
+          <input
+            class="item"
+            id="crowbar"
+            type="checkbox"
+            name="Crowbar"
+            value="Crowbar"
+          />
+          <lable for="crowbarQuantity"></lable>
+          <input
+            id="crowbarQuantity"
+            type="number"
+            name="Crowbar Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="energyDrink">Energy Drink</lable>
+          <input
+            class="item"
+            id="energyDrink"
+            type="checkbox"
+            name="Energy Drink"
+            value="Energy Drink"
+          />
+          <lable for="energyDrinkQuantity"></lable>
+          <input
+            id="energyDrinkQuantity"
+            type="number"
+            name="Energy Drink Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="soldiersSyringe">Soldier's Syringe</lable>
+          <input
+            class="item"
+            id="soldiersSyringe"
+            type="checkbox"
+            name="Soldier's Syringe"
+            value="Soldier's Syringe"
+          />
+          <lable for="soldiersSyringeQuantity"></lable>
+          <input
+            id="soldiersSyringeQuantity"
+            type="number"
+            name="Soldier's Syringe Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="lensMakersGlasses">Lens-Maker's Glasses</lable>
+          <input
+            class="item"
+            id="lensMakersGlasses"
+            type="checkbox"
+            name="Lens-Maker's Glasses"
+            value="Lens-Maker's Glasses"
+          />
+          <lable for="lensMakersGlassesQuantity"></lable>
+          <input
+            id="lensMakersGlassesQuantity"
+            type="number"
+            name="Lens-Maker's Glasses Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+        <div>
+          <lable for="delicateWatch">Delicate Watch</lable>
+          <input
+            class="item"
+            id="delicateWatch"
+            type="checkbox"
+            name="Delicate Watch"
+            value="Delicate Watch"
+          />
+          <lable for="delicateWatchQuantity"></lable>
+          <input
+            id="delicateWatchQuantity"
+            type="number"
+            name="Delicate Watch Quantity"
+            value="0"
+            disabled
+          />
+        </div>
+      </fieldset>
+      <label for="submit_id"></label>
+      <input type="submit" id="submit_id" name="submit" value="Record" />
+    </form>
+  </div>
+</html>
